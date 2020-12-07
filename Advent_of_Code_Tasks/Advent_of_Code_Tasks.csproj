@@ -24,8 +24,19 @@
     <EmbeddedResource Include="day1_input">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="day2_input">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Advent_of_Code\Advent_of_Code.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="day2_input" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="day2_input">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>

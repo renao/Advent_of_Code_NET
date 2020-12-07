@@ -8,17 +8,13 @@ namespace Advent_of_Code
     {
 
         public static int SolveForTwoNumbers(List<int> numbers)
-        {
-            return numbers
+            => numbers
                 .FindAll(n => numbers.Exists(m => m + n == 2020))
                 .Aggregate((a, b) => a * b);
-        }
 
         public static int SolveForThreeNumbers(List<int> numbers)
-        {
-            return numbers
+            => numbers
                 .FindAll(n => numbers.Exists(m => numbers.Exists(o => o + m + n == 2020)))
                 .Aggregate((a, b) => a * b);
-        }
     }
 }
