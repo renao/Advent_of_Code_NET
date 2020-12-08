@@ -16,7 +16,7 @@ namespace Advent_of_Code
             var trees = 0;
             for (int i = 0; i < mapLines.Count; i += y)
             {
-                var posX = (i * x) % mapLines[i].Length;
+                var posX = i * x % mapLines[i].Length;
                 if (mapLines[i][posX] == Tree)
                 {
                     trees += 1;
