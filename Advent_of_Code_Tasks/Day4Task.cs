@@ -16,7 +16,7 @@ namespace Advent_of_Code_Tasks
             var validPassports = Day4
                 .ReadPassports(this.ReadPassportFile)
                 .Count(Day4.IsValid);
-            Assert.That(validPassports, Is.EqualTo(-1));
+            Assert.That(validPassports, Is.EqualTo(167));
         }
 
         private string ReadPassportFile
