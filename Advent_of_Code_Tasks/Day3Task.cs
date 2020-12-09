@@ -32,7 +32,7 @@ namespace Advent_of_Code_Tasks
                 .Select(slope => (long)Day3.CountTrees(InputMapLines, slope.Right, slope.Down))
                 .Aggregate((x, y) => x * y);
 
-            Assert.That(allSlopes, Is.EqualTo(-1));
+            Assert.That(allSlopes, Is.EqualTo(9_406_609_920));
         }
 
         private List<string> InputMapLines
