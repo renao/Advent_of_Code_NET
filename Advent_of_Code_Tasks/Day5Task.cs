@@ -16,6 +16,12 @@ namespace Advent_of_Code_Tasks
             Assert.That(Day5.FindHighestSeatId(ReadBoardingPasses), Is.EqualTo(848));
         }
 
+        [Test]
+        public void Find_Open_Seat()
+        {
+            Assert.That(Day5.FindOpenSeat(ReadBoardingPasses), Is.EqualTo(682));
+        }
+
         private string[] ReadBoardingPasses
             => File.ReadAllLines("day5_input");
     }
